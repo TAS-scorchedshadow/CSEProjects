@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d64e49f5-27f9-4689-a6a8-d6ac40439817" name="Changes" comment="" />
+    <list default="true" id="d64e49f5-27f9-4689-a6a8-d6ac40439817" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/profile.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/profile.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +22,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -24,17 +33,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Dylan/PycharmProjects/CSEProjects",
-    "list.type.of.created.stylesheet": "SCSS",
-    "settings.editor.selected.configurable": "watcher.settings"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="CSEProjects" />
@@ -69,6 +73,10 @@
       <updated>1672729755719</updated>
       <workItem from="1672729756831" duration="48000" />
       <workItem from="1672729863129" duration="1107000" />
+      <workItem from="1673080578272" duration="43000" />
+      <workItem from="1673333963295" duration="616000" />
+      <workItem from="1673334720283" duration="3481000" />
+      <workItem from="1673341023512" duration="3158000" />
     </task>
     <servers />
   </component>

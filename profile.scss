@@ -3,3 +3,62 @@ body {
   padding: 0;
   background-color: aliceblue;
 }
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.bubble {
+  width: 200px;
+  height: 220px;
+}
+
+.bubble > * {
+  transition-duration: 1s;
+}
+
+.bubble-text {
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  font-size: 40px;
+}
+
+.bubble-main {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid red;
+  filter: sepia(100%);
+}
+
+.bubble:hover > .bubble-main {
+  transform: scale(1.1);
+  filter: sepia(0%);
+}
+
+.bubble:hover > .bubble-text {
+  opacity: 1;
+  transform: translateY(5%);
+  transition-delay: 0.5s;
+}
+
+#stellaris > .bubble-main {
+  background-position: center;
+  background-size: cover;
+  background-image: url(images/stellaris.jpg);
+}
+#league > .bubble-main {
+  background-position: center;
+  background-size: cover;
+  background-image: url(images/league.jpg);
+}
+
+#opus > .bubble-main {
+  background-position: left;
+  background-size: cover;
+  background-image: url(images/opus.png);
+}
