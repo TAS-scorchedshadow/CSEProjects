@@ -2,36 +2,272 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dylan Huynh</title>
+    <script src="https://kit.fontawesome.com/75c4be3afe.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="profile.css">
 </head>
 <body>
-    <h1>Dylan Huynh</h1>
-    <div class="container">
-        <div class="bubble" id="stellaris">
-            <div class="bubble-main">
-
+    <div class="container-fluid">
+        <div class="row pb-4" id="hero">
+            <div class="col-12 col-lg-4">
+                <div class="profile">
+                    <div class="container">
+                        <span class="profile-circle"></span>
+                    </div>
+                    <h2 class="highlighter mt-4">Dylan Huynh</h2>
+                    <div class="row justify-content-around my-3">
+                        <a class="social-button" href="https://discord.com/users/203402211902881792" target="_blank">
+                            <i class="fa-brands fa-discord fa-2xl"></i>
+                        </a>
+                        <a class="social-button" href="https://github.com/TAS-scorchedshadow" target="_blank">
+                            <i class="fa-brands fa-github-alt fa-2xl"></i>
+                        </a>
+                        <a class="social-button" href="https://www.instagram.com/deelan.h" target="_blank">
+                            <i class="fa-brands fa-instagram fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="bubble-text">
-                Stellaris!
+            <div class="col-12 col-lg-7">
+                <div class="card-2 flex-col">
+                <div class="card">
+                    <div class="container-fluid">
+                        <div class="row py-4" id="card-content">
+                            <div class="col-12 col-md-7">
+                                <div id="media-player">
+                                    <div class="media" style="display: flex">
+                                            <iframe
+                                                src="https://www.youtube.com/embed/4OOibEdygv0">
+                                            </iframe>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <div class="container">
+                                    <div id="media-text-display">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="gallery-control" class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-6 my-3" id="projects">
+                            <h5 class="highlighter">Projects</h5>
+                            <div class="gallery-holders" style="justify-content: space-between">
+                                <div class="media-button media-active">
+                                    <div class="media-display">
+                                    <img class="pt-1" src="images/riflelytics_logo.svg">
+                                </div>
+                                    <div class="media">
+                                        <iframe
+                                            src="https://www.youtube.com/embed/4OOibEdygv0">
+                                        </iframe>
+                                    </div>
+                                    <div class="media-text">
+                                        <h4>Riflelytics</h4>
+                                        <div>
+                                            <i>"There's nothing more permanent than a temporary solution"</i>
+                                        </div>
+                                        <br>
+                                        <div>
+                                            My HSC project that schools are paying me to maintain 😬. Kinda proud of our
+                                            flask + html css project going so far, but also having to deal with my own <b>tech debt</b>
+                                            makes me want to rip my hair out
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="media-button">
+                            <div class="media-display">
+                                <img src="images/minecraft.svg">
+                            </div>
+                            <div class="media">
+                                <img src="images/Getting-Over-A-Shameless-Ripoff-Map-Thumbnail.jpg" alt="Minecraft Parkour Map">
+                            </div>
+                            <div class="media-text">
+                                <h4>Mapping (Minecraft)</h4>
+                                <div>
+                                    Played and built a lot of parkout maps in HS. This is the only surviving one after my hard drive got nuked 😔.
+                                    Still available at <a href="https://www.minecraftmaps.com/parkour-maps/getting-over-a-shameless-ripoff">Minecraft Maps</a>.
+                                </div>
+                            </div>
+                            </div>
+                                </div>
+                        </div>
+                        <div class="col-12 col-md-6 my-3" id="sports">
+                            <h5 class="highlighter">Sports (Former)</h5>
+                            <div class="gallery-holders" style="justify-content: space-between">
+                                <div class="media-button">
+                                    <div class="media-display">
+                                        <img src="images/sailing.svg" style="width: 75%">
+                                    </div>
+                                    <div class="media">
+                                        <img src="images/sailing-display.jpg">
+                                    </div>
+                                    <div class="media-text">
+                                        <h4>Sailing</h4>
+                                        <div>
+                                            Sailed competitively in HS. Was co-captain with this lovely fellow. We never did
+                                            that well at a state comps, but it is what it is.
+                                        </div>
+                                        <br>
+                                        <div>
+                                            Want to get back into it but its so damn expensive
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="media-button">
+                                    <div class="media-display">
+                                        <img src="images/athletics.png" style="width: 100%">
+                                    </div>
+                                    <div class="media">
+                                        <img src="images/athletics-win.JPEG">
+                                    </div>
+                                    <div class="media-text">
+                                        <h4>Athletics</h4>
+                                        <div>A long time ago, in a school not to far away from UNSW...</div>
+                                        <br>
+                                        <div>Dylan was a sprinter. Not anymore lol</div>
+                                        <br>
+                                        <div>Photo: NSW 4x100m relay champions</div>
+                                    </div>
+                                </div>
+                                <div class="media-button">
+                                    <div class="media-display">
+                                        <img src="images/fencing.svg" style="width: 100%">
+                                    </div>
+                                    <div class="media">
+                                        <iframe
+                                            src="https://www.youtube.com/embed/ZnVGm00Ffos">
+                                        </iframe>
+                                    </div>
+                                    <div class="media-text">
+                                        <h4>Fencing</h4>
+                                        <div>Poke people with funny stick. I was behind the camera on this one</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
             </div>
         </div>
-        <div class="bubble" id="league">
-            <div class="bubble-main">
-
-            </div>
-            <div class="bubble-text">
-                Arcane was good...
+        <div class="container pt-3">
+            <h1 class="highlighter p-2">About Me</h1>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg">
+                    <div class="d-flex justify-content-center">
+                        <div class="circle-container text-center">
+                        <p>
+                            <b>Age</b> 🕒: 19 <br>
+                            <b>Pronouns</b> ⚧: He / Him <br>
+                            <b>Likes</b> 👍: Board Games / Anime & Manga <br>
+                            <b>Degree</b> 🎓: Computer Science / <s>Engineering (Hons)</s> <br>
+                            <b>Music</b> 🎵: 60% Pop - 30% Hololive - 10% Anime op <br>
+                            <b>High School</b> 🏫: Sydney Boys High School <br>
+                        </p>
+                </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg text-center">
+                    <div id="ranking-container">
+                        <div class="container-fluid">
+                            <h5 class="container-fluid highlighter py-2">Coding Enjoyment Ranking 😀 to 🙃</h5>
+                            <div class="row justify-content-around">
+                                <div class="ranking">
+                                    C
+                                </div>
+                                <div class="ranking">
+                                    Python
+                                </div>
+                                <div class="ranking">
+                                    Rust
+                                </div>
+                                <div class="ranking">
+                                    JS
+                                </div>
+                                <div class="ranking">
+                                    HTML<br>/CSS
+                                </div>
+                                <div class="ranking">
+                                    GML
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid">
+                            <h5 class="highlighter py-2">Comp Courses Ranking 😀 to 🙃</h5>
+                            <div class="row justify-content-around">
+                            <div class="ranking">
+                                2521
+                            </div>
+                            <div class="ranking">
+                                1521
+                            </div>
+                            <div class="ranking">
+                                1531
+                            </div>
+                            <div class="ranking">
+                                1511
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="bubble" id="opus">
-            <div class="bubble-main">
+        <div class="container pt-5">
+            <h1 class="highlighter p-2">Dylan's Recently Played</h1>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg">
+                    <div class="bubble" id="stellaris">
+                        <div class="bubble-title">
+                            Stellaris
+                        </div>
+                        <div class="bubble-main">
+                        </div>
+                        <div class="bubble-text">
+                            <div>Funny Laser go brr</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg">
+                    <div class="bubble" id="opus">
+                        <div class="bubble-title">
+                            <div>Opus: Echo of Starsong</div>
+                        </div>
+                        <div class="bubble-main"></div>
+                        <div class="bubble-text">
+                            Beautiful Game
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg">
+                    <div class="bubble" id="league">
+                        <div class="bubble-title">
+                            We don't talk about it...
+                        </div>
+                        <div class="bubble-main">
 
-            </div>
-            <div class="bubble-text">
-
+                        </div>
+                        <div class="bubble-text">
+                            At least arcane was good
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="profile.js"></script>
 </html>

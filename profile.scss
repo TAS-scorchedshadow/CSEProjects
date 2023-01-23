@@ -1,43 +1,320 @@
+//https://colorhunt.co/palette/f5f5f5f0545430475e121212
+
+$hero-color: rgb(48, 71, 94);
+$base-color: rgb(69, 98, 133);
+$dark: rgb(18, 18, 18);
+$light: rgb(245, 245, 245);
+$accent: rgb(240, 84, 84);
+
+
+@font-face {
+  font-family: Comfortaa;
+  src: url('fonts/Comfortaa-VariableFont_wght.ttf');
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  background-color: aliceblue;
+  background-color: $base-color;
+  color: $dark;
+  font-family: Comfortaa, sans-serif;
+  margin: 0px;
+}
+
+.circular-button {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center;
+
+  background-color: rgb(245, 245, 245);
+  border-style: solid;
+  border-color: rgb(240, 84, 84);
+  transition: 1s;
+}
+
+.circular-button:hover {
+  transform: scale(1.5);
+}
+
+.about-me {
+  width: 90vw;
+  height: 400px;
+  border-radius: 20px;
 }
 
 .container {
   display: flex;
   width: 100%;
-  height: 100%;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.justify-center {
+  text-align: center;
+}
+
+// Hero
+
+#hero {
+  padding-top: 50px;
+  background-repeat: repeat-x;
+  background-image: url('background/circle-scatter-haikei-3.svg');
+  animation: animatedBackground 30s linear infinite alternate;
+  align-items: flex-end;
   justify-content: space-around;
 }
 
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile-circle {
+  display: block;
+  width: 300px;
+  min-width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-size: cover;
+  background-image: url(images/profile.png);
+  border: 5px solid $dark
+}
+
+$social-btn-radius: 75px;
+.ranking {
+  width: $social-btn-radius;
+  height: $social-btn-radius;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center;
+  text-align: center;
+
+  background-color: $base-color;
+  border-style: solid;
+  border-color: $dark;
+}
+
+.social-button {
+  width: $social-btn-radius;
+  height: $social-btn-radius;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center;
+  text-align: center;
+
+  background-color: $base-color;
+  border-style: solid;
+  border-color: $dark;
+  transition: 1s;
+}
+
+.social-button:hover {
+  border-color: $accent;
+  box-shadow: 7px 5px 5px;
+  transform: translate(-3px,-3px);
+}
+
+.social-button > i {
+  width: 100%;
+  color: $light;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+
+.card {
+  background-color: $light;
+}
+
+#card-content {
+  align-items: center;
+}
+
+$media-btn-radius: 75px;
+
+.media-button {
+  width: $media-btn-radius;
+  height: $media-btn-radius;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center;
+
+  background-color: $light;
+  border-style: solid;
+  border-color: $dark;
+  transition: 1s;
+}
+
+.media-active {
+  border-color: $accent;
+  transform: translateY(-10%);
+}
+
+#media-player {
+  display: flex;
+  justify-content: center;
+}
+
+.media-text {
+  display: none;
+  text-align: center;
+}
+
+.media-display {
+  width: 50px;
+  justify-content: center;
+}
+
+#projects {
+  text-align: center;
+}
+
+#sports {
+  text-align: center;
+}
+
+#gallery-control {
+  margin-top: 35px;
+  justify-content: space-around;
+}
+
+.gallery-holders {
+  width: 100%;
+  height: $media-btn-radius + 2px;
+  background-color: $dark;
+  border-radius: $media-btn-radius;
+  display: flex;
+  flex-direction: row;
+  min-width: $media-btn-radius*3.5;
+  //box-shadow: 15px 20px rgb(240, 84, 84);
+}
+
+.media {
+  display: none;
+  min-width: 400px;
+  height: 270px;
+  justify-content: center;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+iframe {
+  width: 420px;
+  height: 250px;
+}
+
+// Title Highlighter
+.highlighter {
+  background: $light;
+  border-radius: 500px;
+  // Big border radius makes ends curve
+  border-style: solid;
+  border-color: $dark;
+}
+
+.circle-container {
+  display: flex;
+  aspect-ratio : 1 / 1;
+  background: $light;
+  width: fit-content;
+  border-radius: 5000px;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-color: $dark;
+}
+
+#ranking-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+//Games Stuff
+
+$recently-played-radius: 200px;
+
 .bubble {
-  width: 200px;
-  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bubble-main {
+  width: $recently-played-radius;
+  height: $recently-played-radius;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center;
+
+  background-color: rgb(245, 245, 245);
+  border-style: solid;
+  border-color: $dark;
+  transition: 1s;
+
+  filter: grayscale(100%);
 }
 
 .bubble > * {
   transition-duration: 1s;
 }
 
-.bubble-text {
+.bubble-title {
   display: flex;
   justify-content: center;
   opacity: 0;
-  font-size: 40px;
+  font-size: 30px;
 }
 
-.bubble-main {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 1px solid red;
-  filter: sepia(100%);
+.bubble-text {
+  opacity: 0;
+  font-size: 20px;
+  text-align: center;
 }
 
 .bubble:hover > .bubble-main {
-  transform: scale(1.1);
-  filter: sepia(0%);
+  transform: scale(1.05) translateX(-30px);
+  filter: grayscale(0%);
+  box-shadow: 60px 0px rgb(240, 84, 84);
+}
+
+.bubble:hover > .bubble-title {
+  opacity: 1;
+  transform: translateY(5%);
+  transform: translateY(5%);
+  transition-delay: 0.5s;
 }
 
 .bubble:hover > .bubble-text {
@@ -45,6 +322,7 @@ body {
   transform: translateY(5%);
   transition-delay: 0.5s;
 }
+
 
 #stellaris > .bubble-main {
   background-position: center;
