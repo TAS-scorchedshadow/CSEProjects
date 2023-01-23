@@ -46,7 +46,10 @@ body {
 
 #hero {
   padding-top: 50px;
-  background-repeat: repeat-x;
+}
+
+.scoll-background {
+  background-repeat: repeat;
   background-image: url("background/circle-scatter-haikei-3.svg");
   animation: animatedBackground 30s linear infinite alternate;
   align-items: flex-end;
@@ -122,6 +125,10 @@ body {
 a {
   color: inherit; /* blue colors for links too */
   text-decoration: inherit; /* no underline */
+}
+
+.hover-link:hover {
+  color: rgb(240, 84, 84);
 }
 
 .card {
@@ -304,6 +311,24 @@ iframe {
   background-position: left;
   background-size: cover;
   background-image: url(images/opus.png);
+}
+
+#g-witch > .bubble-main {
+  background-position: left;
+  background-size: cover;
+  background-image: url(images/The_Witch_from_Mercury.jpg);
+}
+
+#ya-boy > .bubble-main {
+  background-position: center;
+  background-size: cover;
+  background-image: url(images/Ya-Boy.jpg);
+}
+
+#ao-ashi > .bubble-main {
+  background-position: center;
+  background-size: cover;
+  background-image: url(images/ao-ashi.png);
 }
 
 /*# sourceMappingURL=profile.css.map */

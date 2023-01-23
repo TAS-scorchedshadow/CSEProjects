@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dylan Huynh</title>
-    <script src="https://kit.fontawesome.com/75c4be3afe.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="profile.css">
+    <script src="https://kit.fontawesome.com/75c4be3afe.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row pb-4" id="hero">
+        <div class="row pb-4 scoll-background" id="hero">
             <div class="col-12 col-lg-4">
                 <div class="profile">
                     <div class="container">
@@ -38,7 +38,7 @@
                             <div class="col-12 col-md-7">
                                 <div id="media-player">
                                     <div class="media" style="display: flex">
-                                            <iframe
+                                            <iframe allowfullscreen="true"
                                                 src="https://www.youtube.com/embed/4OOibEdygv0">
                                             </iframe>
                                         </div>
@@ -47,7 +47,18 @@
                             <div class="col-12 col-md-5">
                                 <div class="container">
                                     <div id="media-text-display">
-
+                                        <div class="text-center">
+                                            <h4>Riflelytics</h4>
+                                            <div>
+                                                <i>"There's nothing more permanent than a temporary solution"</i>
+                                            </div>
+                                            <br>
+                                            <div>
+                                                My HSC project that schools are paying me to maintain 😬. Kinda proud of our
+                                                flask + html css project going so far, but also having to deal with my own <b>tech debt</b>
+                                                makes me want to rip my hair out
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -64,7 +75,7 @@
                                     <img class="pt-1" src="images/riflelytics_logo.svg">
                                 </div>
                                     <div class="media">
-                                        <iframe
+                                        <iframe allowfullscreen="true"
                                             src="https://www.youtube.com/embed/4OOibEdygv0">
                                         </iframe>
                                     </div>
@@ -111,8 +122,8 @@
                                     <div class="media-text">
                                         <h4>Sailing</h4>
                                         <div>
-                                            Sailed competitively in HS. Was co-captain with this lovely fellow. We never did
-                                            that well at a state comps, but it is what it is.
+                                            Sailed competitively in HS. Was co-captain with this lovely fellow on the right.
+                                            We never did that well at a state comps, but it is what it is.
                                         </div>
                                         <br>
                                         <div>
@@ -131,7 +142,7 @@
                                         <h4>Athletics</h4>
                                         <div>A long time ago, in a school not to far away from UNSW...</div>
                                         <br>
-                                        <div>Dylan was a sprinter. Not anymore lol</div>
+                                        <div>Dylan was a sprinter/hurdler. Not anymore lol</div>
                                         <br>
                                         <div>Photo: NSW 4x100m relay champions</div>
                                     </div>
@@ -141,7 +152,7 @@
                                         <img src="images/fencing.svg" style="width: 100%">
                                     </div>
                                     <div class="media">
-                                        <iframe
+                                        <iframe allowfullscreen="true"
                                             src="https://www.youtube.com/embed/ZnVGm00Ffos">
                                         </iframe>
                                     </div>
@@ -157,21 +168,26 @@
                 </div>
             </div>
         </div>
-        <div class="container pt-3">
+        <div id="about-me">
+            <div class="container pt-3">
             <h1 class="highlighter p-2">About Me</h1>
         </div>
-        <div class="container-fluid">
+            <div class="container-fluid mb-4">
             <div class="row">
                 <div class="col-12 col-lg">
                     <div class="d-flex justify-content-center">
                         <div class="circle-container text-center">
                         <p>
                             <b>Age</b> 🕒: 19 <br>
-                            <b>Pronouns</b> ⚧: He / Him <br>
-                            <b>Likes</b> 👍: Board Games / Anime & Manga <br>
-                            <b>Degree</b> 🎓: Computer Science / <s>Engineering (Hons)</s> <br>
-                            <b>Music</b> 🎵: 60% Pop - 30% Hololive - 10% Anime op <br>
+                            <b>Pronouns</b> ⚧: He / Him <br><br>
+                            <b>Childhood Crush</b>: Ema Watson <br>
+                            <b>Likes</b> 👍: Board Games / Anime & Manga <br><br>
                             <b>High School</b> 🏫: Sydney Boys High School <br>
+                            <b>Degree</b> 🎓: Computer Science / <s>Engineering (Hons)</s> <br><br>
+                            <b>Music</b> 🎵: <a class="hover-link" href="http://www.instagram.com">60% Pop</a> - 30% Hololive - 10% Anime op <br>
+                            <b>Favourite Author</b> 📚: Brandon Sanderson <br><br>
+                            <b>Best Movie</b> 🎥: Speed Racer 🏎️<br>
+                            <b>Spirit Animal</b>: Grumpy 🐈
                         </p>
                 </div>
                     </div>
@@ -197,12 +213,13 @@
                                     HTML<br>/CSS
                                 </div>
                                 <div class="ranking">
-                                    GML
+                                    GML<br>
+                                    🗑️🔥
                                 </div>
                             </div>
                         </div>
                         <div class="container-fluid">
-                            <h5 class="highlighter py-2">Comp Courses Ranking 😀 to 🙃</h5>
+                            <h5 class="highlighter py-2">Comp Courses Ranking 😀 to 😑</h5>
                             <div class="row justify-content-around">
                             <div class="ranking">
                                 2521
@@ -222,10 +239,12 @@
                 </div>
             </div>
         </div>
-        <div class="container pt-5">
-            <h1 class="highlighter p-2">Dylan's Recently Played</h1>
         </div>
-        <div class="container-fluid">
+        <div class="row scoll-background" id=most-played">
+            <div class="container pt-3">
+            <h1 class="highlighter p-2">Dylan's Top Games in 2022</h1>
+        </div>
+            <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-lg">
                     <div class="bubble" id="stellaris">
@@ -235,7 +254,7 @@
                         <div class="bubble-main">
                         </div>
                         <div class="bubble-text">
-                            <div>Funny Laser go brr</div>
+                            <div>Definitely not a genocide simulator</div>
                         </div>
                     </div>
                 </div>
@@ -246,22 +265,90 @@
                         </div>
                         <div class="bubble-main"></div>
                         <div class="bubble-text">
-                            Beautiful Game
+                            Who's cutting onions in space 😭
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg">
                     <div class="bubble" id="league">
                         <div class="bubble-title">
-                            We don't talk about it...
+                            Hey before you judge...
                         </div>
                         <div class="bubble-main">
 
                         </div>
                         <div class="bubble-text">
-                            At least arcane was good
+                            Let's agree arcane was good
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="top-anime">
+            <div class="container pt-5">
+            <h1 class="highlighter p-2">Favourite Anime of 2022</h1>
+        </div>
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg">
+                    <div class="bubble" id="g-witch">
+                        <div class="bubble-title">
+                            Gundam: WFM
+                        </div>
+                        <div class="bubble-main">
+                        </div>
+                        <div class="bubble-text">
+                            <div>Big Robot 👍</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg">
+                    <div class="bubble" id="ya-boy">
+                        <div class="bubble-title">
+                            <div>Ya Boy Kongming!</div>
+                        </div>
+                        <div class="bubble-main"></div>
+                        <div class="bubble-text">
+                            🎶 Ciki Ciki 🎶 Bam Bam 🎶
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg">
+                    <div class="bubble" id="ao-ashi">
+                        <div class="bubble-title">
+                            <div>Ao Aishi</div>
+                        </div>
+                        <div class="bubble-main"></div>
+                        <div class="bubble-text">
+                            Can't go wrong with a good sports anime
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="about-website">
+            <div class="container pt-3">
+                <h1 class="highlighter p-2">About The Site</h1>
+            </div>
+            <div class="container-fluid">
+                <div class="container">
+                    <h5 class="highlighter px-4 py-2">Made with</h5>
+                </div>
+                <div class="row justify-content-center mb-3">
+                    <a class="social-button mx-2" href="https://getbootstrap.com" target="_blank">
+                        <i class="fa-brands fa-bootstrap fa-2xl"></i>
+                    </a>
+                    <a class="social-button mx-2" href="https://jquery.com/" target="_blank">
+                        <img src="images/jquery-vertical.svg" width="50px">
+                    </a>
+                    <a class="social-button mx-2" href="https://fontawesome.com/" target="_blank">
+                        <img src="images/font-awesome-solid.svg" width="50px">
+                    </a>
+                </div>
+                <div class="container">
+                    <h5 class="highlighter px-4 py-2">Also Mobile Friendly!</h5>
                 </div>
             </div>
         </div>
