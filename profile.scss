@@ -373,3 +373,7 @@ $recently-played-radius: 200px;
   background-size: cover;
   background-image: url(images/ao-ashi.png);
 }
+
+.highlight:hover{
+  color: $accent;
+}
