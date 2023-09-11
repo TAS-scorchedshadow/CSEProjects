@@ -377,3 +377,7 @@ $recently-played-radius: 200px;
 .highlight:hover{
   color: $accent;
 }
+
+.highlight2:hover {
+  filter: invert(75%);
+}
